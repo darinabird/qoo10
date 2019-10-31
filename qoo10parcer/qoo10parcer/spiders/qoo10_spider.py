@@ -7,8 +7,12 @@ class Qoo10SpiderSpider(scrapy.Spider):
     query = input('Put search query: ')
     start_urls = [
         'https://www.qoo10.sg/s/' + query + '?keyword=' + query + '&keyword_auto_change=',
-        'https://www.qoo10.sg/gmkt.inc/Search/SearchAjaxAppend.aspx?search_type=SearchQooBoRecommendItems'
-        '&search_keyword=' + query + '&shipto=RU&___cache_expire___=1571824461283',
+        'https://www.qoo10.sg/s/?search_option=tt&gdlc_cd=&gdmc_cd=&gdsc_cd=&keyword_hist=' + query +
+        '&delivery_group_no=&bundle_policy=&bundle_delivery=&keyword=&sortType=RANK_POINT_FEMALE&dispType=LIST&flt'
+        '_pri_idx=&filterDelivery=NNNNNANNNN&search_global_yn=&basis=&shipFromNation=&shipto=RU&brandnm=&SearchNation'
+        'Code=&is_research_yn=Y&hid_keyword=' + query + '&quick_delivery_yn=&qprime_yn=&shipping_avg_dt=&video_goods_'
+        'yn=&coupon_filter_no=&gd_type=&drugs_type=&relation_group_no=&multiple_ship_from_yn=Y&priceMin=&priceMax=&'
+        'category_specific_kw_nos=&curPage=2&pageSize=60&partial=off&brandno=',
     ]
 
 
